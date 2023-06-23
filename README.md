@@ -22,6 +22,7 @@
  ### SPRING BOOT:
 
  ### ECommerce.java:
+ ```
  java
 package com.example.saveetha.Shopping.ECom;
 import jakarta.persistence.*;
@@ -71,10 +72,11 @@ public class ECommerce {
                 '}';
     }
 }
-
+```
 
 
 ### ECommerceController.java:
+```
 java
 package com.example.saveetha.Shopping.ECom;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -94,10 +96,11 @@ public class ECommerceController {
     @DeleteMapping(path = {"/{id}"})
     public void deleteProduct(@PathVariable("id") Long productId){ eCommerceService.removeProduct(productId);}
 }
-
+```
 
 ### REACT CODES:
 ### App.js:
+```
 js
 import React from 'react';
 import './App.css';
@@ -129,9 +132,10 @@ function App() {
   );
 }
 export default App;
-
+```
 
 ### ProductDirectoryComponent.js:
+```
 js
 import React, { useEffect, useState } from 'react';
 import './ProductDirectoryComponent.css'; 
@@ -168,9 +172,10 @@ function ProductDirectoryComponent() {
 };
 
 export default ProductDirectoryComponent;
-
+```
 
 ### ProductAddComponent.js:
+```
 js
 import React, { useState } from "react";
 import './ProductAddComponent.css'
@@ -230,9 +235,10 @@ function ProductAddComponent() {
 }
 
 export default ProductAddComponent;
-
+```
 
 ### ProductDeletionComponent.js:
+```
 js
 import React, { useState } from 'react';
 import './ProductDeletionComponent.css'
@@ -276,7 +282,7 @@ function ProductDeletionComponent() {
 };
 
 export default ProductDeletionComponent;
-
+```
 
 
 
